@@ -1,0 +1,55 @@
+<!-- Unwanted -->
+    <!-- <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>  -->
+<!-- Need to be un commented 
+<p>
+  <mat-toolbar color="primary">
+      
+    <span style="text-align:center">Music App</span>
+    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+    
+    
+    <span class="example-spacer"></span>
+    <div>
+       <button mat-raised-button color="yellow" type="submit">Dashboard</button>
+       <button mat-raised-button color="yellow" type="submit">Logout</button>
+    </div>
+    
+  </mat-toolbar>
+</p>-->
+
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button (click)="toggleSideBar()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>MUSIC APP</span>
+        <div fxFlex FxLayout="row" fxLayoutAlign="flex-end">
+            <ul fxLayout="row" fxLayoutGap="20px">
+                <li>
+                    <button mat-icon-button>
+                        <mat-icon>favorite</mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button mat-icon-button>
+                        <mat-icon>help_outline</mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button mat-button [matMenuTriggerFor]="menu">
+                        <mat-icon>person_outline</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <mat-icon>exit_to_app</mat-icon>
+                            Sign Out
+                        </button>
+                    </mat-menu>
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+ 

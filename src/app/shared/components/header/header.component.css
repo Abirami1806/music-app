@@ -1,0 +1,28 @@
+.nav-container
+{
+    display:grid;
+    grid-template-columns: 90% 10%;
+    width:100%
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }
+mat-drawer-content
+{
+    height:80vh;
+    padding: 1rem;
+}  
+.title{
+    text-align: center;
+}
+mat-drawer-container
+{
+    height:100%;
+}
+mat-drawer
+{
+    width:350px;
+}
+ul li{
+    list-style: none;
+}
