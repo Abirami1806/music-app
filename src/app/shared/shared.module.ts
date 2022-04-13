@@ -11,11 +11,19 @@ import {MatMenuModule} from '@angular/material/menu';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import {MatListModule} from '@angular/material/list';
 import { RouterModule } from '@angular/router';
+import { SearchComponent } from './components/search/search.component';
+import { HttpClientModule } from '@angular/common/http';
+
+import {MatInputModule} from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     HeaderComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    SearchComponent
   ],
   imports: [
     CommonModule,
@@ -26,13 +34,18 @@ import { RouterModule } from '@angular/router';
     FlexLayoutModule,
     MatMenuModule,
     MatListModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    MatCardModule,
+    HttpClientModule,
+    MatInputModule
   ],
   exports:
   [
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    SearchComponent
   ]
 })
 export class SharedModule { }

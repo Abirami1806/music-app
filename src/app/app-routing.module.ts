@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DefaultComponent } from './layouts/default/default.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { FavouritesComponent } from './modules/favourites/favourites.component';
+import { SearchComponent } from './shared/components/search/search.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,9 @@ const routes: Routes = [
     },{
       path:'favourites',
       component:FavouritesComponent
+    },{
+      path:'search',
+      component:SearchComponent
     }
       ]
   }

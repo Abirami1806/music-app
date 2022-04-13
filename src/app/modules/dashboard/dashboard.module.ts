@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FavouritesComponent } from './favourites.component';
+import { DashboardComponent } from './dashboard.component';
 
 
 
 @NgModule({
   declarations: [
-    FavouritesComponent
+    DashboardComponent
   ],
   imports: [
     CommonModule
   ]
 })
-export class FavouritesModule { }
+export class DashboardModule { }
