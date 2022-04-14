@@ -1,0 +1,20 @@
+.btn
+{
+    color:azure;
+    background-color: blue;
+}
+#signUp
+{
+    text-decoration: underline;
+}
+#signUp:hover
+{
+    color:blue;
+    font-style: italic;
+}
+#newuser
+{
+    
+    float: right;
+    margin-right:10em;
+}

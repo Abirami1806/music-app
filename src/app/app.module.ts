@@ -11,6 +11,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DefaultModule } from './layouts/default/default.module';
 import { NapsterService } from './napster.service';
+import { YoutubeSearchComponent } from './modules/youtube-search/youtube-search.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterService } from './register.service';
+
 
 
 
@@ -19,11 +24,24 @@ import { NapsterService } from './napster.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    
+    AppComponent,
+    LoginComponent,
+    RegistrationComponent,
+    YoutubeSearchComponent
+  
+   
+
    
 
   ],
   imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
+    DefaultModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -34,7 +52,7 @@ import { NapsterService } from './napster.service';
 
        
   ],
-  providers: [NapsterService],
+  providers: [NapsterService,RegisterService],
   bootstrap: [AppComponent],
 
 })

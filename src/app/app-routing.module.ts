@@ -2,9 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { DefaultComponent } from './layouts/default/default.component';
+import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { FavouritesComponent } from './modules/favourites/favourites.component';
+import { RegistrationComponent } from './registration/registration.component';
 import { SearchComponent } from './shared/components/search/search.component';
+import { YoutubeSearchComponent } from './modules/youtube-search/youtube-search.component';
 
 
 const routes: Routes = [
@@ -16,10 +19,22 @@ const routes: Routes = [
       component:DashboardComponent
     },{
       path:'favourites',
-      component:FavouritesComponent
+      component:LoginComponent
     },{
       path:'search',
       component:SearchComponent
+    },
+    {
+      path:'login',
+      component:LoginComponent
+    },
+    {
+      path:'register',
+      component:RegistrationComponent
+    },
+    {
+      path:'youtube-search',
+      component:YoutubeSearchComponent
     }
       ]
   }
