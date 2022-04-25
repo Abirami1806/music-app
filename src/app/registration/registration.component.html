@@ -44,7 +44,11 @@
     <!--<small class="alert-danger" *ngIf=passwordConfrm.value!=password.value>password does not match</small>-->
     </div>
       <hr>
-  
+      <div>
+        <label><b>Upload Photo</b></label>
+        <input type="file" placeholder="Upload Your Photo" (change)="onUploading($event,registrationForm)" >
+        <img [src]=url id="image_upload">
+      </div>
       
       <button type="submit" class="registerbtn">Register</button>
     </div>

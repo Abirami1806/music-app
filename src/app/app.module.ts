@@ -15,6 +15,12 @@ import { YoutubeSearchComponent } from './modules/youtube-search/youtube-search.
 import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterService } from './register.service';
+import { CommonModule } from '@angular/common';
+
+
+import { RecommendationComponent } from './recommendation/recommendation.component';
+import { DashboardComponent } from './modules/dashboard/dashboard.component';
+import { FavouritesComponent } from './modules/favourites/favourites.component';
 
 
 
@@ -28,7 +34,11 @@ import { RegisterService } from './register.service';
     AppComponent,
     LoginComponent,
     RegistrationComponent,
-    YoutubeSearchComponent
+    YoutubeSearchComponent,
+    RecommendationComponent,
+    DashboardComponent,
+    FavouritesComponent
+  
   
    
 
@@ -47,7 +57,8 @@ import { RegisterService } from './register.service';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    DefaultModule
+    DefaultModule,
+    CommonModule
  
 
        

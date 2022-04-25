@@ -28,24 +28,18 @@
         <div fxFlex FxLayout="row" fxLayoutAlign="flex-end">
             <ul fxLayout="row" fxLayoutGap="20px">
                 <li>
-                    <a mat-list-item routerLinkActive="list-item-active" routerLink="/search">
+                    <!--<a mat-list-item routerLinkActive="list-item-active" routerLink="/search">
                         <mat-icon>search</mat-icon>
                        Search
-                    </a>
-                    <button mat-icon-button>
-                        <mat-icon>search</mat-icon>
-                    </button>
+                    </a>-->
+                
                 </li>
                 <li>
-                    <button mat-icon-button>
+                    <button mat-icon-button routerLink="/favourites">
                         <mat-icon>favorite</mat-icon>
                     </button>
                 </li>
-                <li>
-                    <button mat-icon-button>
-                        <mat-icon>help_outline</mat-icon>
-                    </button>
-                </li>
+        
                 <li>
                     <button mat-button [matMenuTriggerFor]="menu">
                         <mat-icon>person_outline</mat-icon>

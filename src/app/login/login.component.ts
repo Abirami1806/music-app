@@ -15,8 +15,8 @@ import { Validators } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  u1=new User(1,"hash@gmail.com","hash","hash@2000");
-  msg=''
+  u1=new User(1,"","","");
+  msg='';
  
   constructor(private _service:RegisterService,private _router : Router) {
   }
@@ -33,7 +33,9 @@ export class LoginComponent implements OnInit {
     this._service.loginUserFromRemote(this.u1).subscribe(
       _data => 
       {console.log("response received");
-      this._router.navigate(['/']) },
+      console.log(_data);
+      console.log(_data.userName);
+      this._router.navigate(['/search']) },
       _error => {
         console.log("exception occured");
       this.msg="Incorrect credentials, Please enter valid emailId and Password";

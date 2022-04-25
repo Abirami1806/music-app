@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { DefaultComponent } from './layouts/default/default.component';
@@ -8,7 +8,8 @@ import { FavouritesComponent } from './modules/favourites/favourites.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { SearchComponent } from './shared/components/search/search.component';
 import { YoutubeSearchComponent } from './modules/youtube-search/youtube-search.component';
-
+import { CommonModule } from '@angular/common';
+import { RecommendationComponent } from './recommendation/recommendation.component';
 
 const routes: Routes = [
   {
@@ -19,7 +20,7 @@ const routes: Routes = [
       component:DashboardComponent
     },{
       path:'favourites',
-      component:LoginComponent
+      component:FavouritesComponent
     },{
       path:'search',
       component:SearchComponent
@@ -35,6 +36,10 @@ const routes: Routes = [
     {
       path:'youtube-search',
       component:YoutubeSearchComponent
+    },
+    {
+    path:'Recommendation',
+    component:RecommendationComponent
     }
       ]
   }
@@ -50,7 +55,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),CommonModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

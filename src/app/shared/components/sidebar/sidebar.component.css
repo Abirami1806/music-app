@@ -19,3 +19,16 @@ a
     font-style: italic;
     text-align: center;
 }
+
+#profile_username
+{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: blue;
+     
+}
+
+#profile_email
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:brown
+}

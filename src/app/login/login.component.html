@@ -6,7 +6,8 @@
   <div class="form-group">
     <label for="email">Email address:</label>
     <input required type="email" class="form-control" id="emailId" name="emailId" [(ngModel)]="u1.emailId" #email="ngModel" required pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+?\.[a-z]{2,3}$"
-    [class.is-invalid]="email.invalid && email.touched" placeholder="Enter Email ID">
+    [class.is-invalid]="email.invalid && email.touched" placeholder="Enter Email ID" >
+    
   </div>
   
 

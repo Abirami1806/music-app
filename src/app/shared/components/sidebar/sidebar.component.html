@@ -1,11 +1,19 @@
 <mat-nav-list>
     <div class="profile-card">
         <div class="header">
-        <h2>ABIRAMI</h2>
-        <h4>abiabiksha14@gmail.com</h4>
+        
+        <div *ngFor="let n of nts,last as l">
+            <div *ngIf = l>
+              <div>
+                
+                  <img src="{{n.image}}">
+                  <p id="profile_username"><b>Welcome {{n.userName}}!!</b></p>
+                  <p id="profile_email">Email ID: {{n.emailId}}</p>
+              </div>
+            </div>
         </div>
-    
-    <img src="https://material.angular.io/assets/img/examples/shiba2.jpg"  alt="failed:(">
+          </div>
+    <!--<img src="https://material.angular.io/assets/img/examples/shiba2.jpg"  alt="failed:(">-->
 </div>
 <!-- <mat-divider></mat-divider>
 <h2 matSubheader style="font-style:italic">Pages</h2> -->
@@ -14,16 +22,16 @@
     <!-- <mat-icon>person_outline</mat-icon> -->
     Profile
 </a>
-<a mat-list-item routerLinkActive="list-item-active" matTooltip="Favorites" routerLink="/favourites">
+<a mat-list-item routerLinkActive="list-item-active" matTooltip="Favorites" routerLink="/login">
     <mat-icon>favorite_border</mat-icon>
     <!-- <mat-icon>favorite</mat-icon> -->
-    Favourites
+    Login
 </a>
-<a mat-list-item routerLinkActive="list-item-active" matTooltip="Recommendation" routerLink="/articles">
+<a mat-list-item routerLinkActive="list-item-active" matTooltip="Recommendation" routerLink="/Recommendation">
     <mat-icon>queue_music</mat-icon>
     Recommendation
 </a>
-<a mat-list-item routerLinkActive="list-item-active" matTooltip="Country Special"  routerLink="/articles">
+<a mat-list-item routerLinkActive="list-item-active" matTooltip="Country Special"  routerLink="/">
     <!-- <mat-icon>tune</mat-icon> -->
     <mat-icon>location_city</mat-icon>
     Country Special

@@ -23,9 +23,11 @@
           </p>
         </mat-card-content>
         <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
+          <button mat-button (click)="addFavourites(obj.name, img[i],tracks[i])">LIKE</button>
+          <button mat-button (click)="addRecommend(obj.name, img[i],tracks[i])">RECOMMEND</button>
+          <audio src="{{tracks[i]}}" controls></audio>
         </mat-card-actions>
+        
       </mat-card>
 </div>
 
