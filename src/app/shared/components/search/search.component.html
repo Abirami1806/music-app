@@ -2,8 +2,9 @@
 <div>
     <form class="example-form">
         <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label color = "primary">search</mat-label>
-          <input [(ngModel)] = "searchQuery" matInput placeholder="search" value="search" color = "primary" (keyup) = "searchArtists()" type = "search" name = "search">
+          
+          <mat-label color = "primary" id="search">Search </mat-label>
+          <input [(ngModel)] = "searchQuery" matInput placeholder="Search for an artist or song" value="search" color = "primary" (keyup) = "searchArtists()" type = "search" name = "search">
         </mat-form-field>
     </form>
 </div>

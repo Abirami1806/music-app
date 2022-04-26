@@ -1,12 +1,12 @@
 
 
 <div class="container">
-    <h1>YOur favourite SOngs</h1>
+    <h1>Your favourite Songs</h1><br>
     
     <div *ngFor="let n of nts">
       <div *ngIf = "n.title">
         <div>
-            <h2>{{n.title}}</h2>
+            <h2 id="title">{{n.title}}</h2>
             <img src="{{n.text}}" alt={{n.title}}><br>
             <audio src="{{n.tracks}}" controls></audio>
             

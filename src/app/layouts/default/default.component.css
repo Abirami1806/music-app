@@ -11,8 +11,11 @@ mat-drawer
 mat-drawer-container
 {
     height:100%;
+    background-image: url("https://images.ctfassets.net/bdyhigkzupmv/6lySzcy7qcIN1tf81Qkus/5b5ac73daeaf61f9057c0b0dd8447a31/hero-guitar-outro.jpg");
 }
-mat-drawer-content
+
+    mat-drawer-content
 {
     padding:20px;
 }
+

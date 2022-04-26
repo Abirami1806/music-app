@@ -6,7 +6,7 @@
             <div *ngIf = l>
               <div>
                 
-                  <img src="{{n.image}}">
+                  <img src="{{n.image}}" alt="Image not uploaded">
                   <p id="profile_username"><b>Welcome {{n.userName}}!!</b></p>
                   <p id="profile_email">Email ID: {{n.emailId}}</p>
               </div>
@@ -20,7 +20,7 @@
 <a mat-list-item routerLinkActive="list-item-active" matTooltip="Profile" routerLink="/">
     <mat-icon>account_circle</mat-icon>
     <!-- <mat-icon>person_outline</mat-icon> -->
-    Profile
+    Home 
 </a>
 <a mat-list-item routerLinkActive="list-item-active" matTooltip="Favorites" routerLink="/login">
     <mat-icon>favorite_border</mat-icon>
@@ -49,8 +49,5 @@ Another menu -->
     <mat-icon>youtube_searched_for</mat-icon>
     SearchYoutube
 </a>
-<a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
-    <mat-icon>contact_phone</mat-icon>
-    Leads
-</a>
+
 </mat-nav-list>

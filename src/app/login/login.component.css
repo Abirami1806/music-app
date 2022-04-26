@@ -5,16 +5,19 @@
 }
 #signUp
 {
-    text-decoration: underline;
+ 
+    color: bisque;
 }
 #signUp:hover
 {
-    color:blue;
-    font-style: italic;
+    text-decoration: underline;
+    font-style: oblique;
+    color: blanchedalmond;
 }
 #newuser
 {
     
     float: right;
     margin-right:10em;
+    color: bisque;
 }

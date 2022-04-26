@@ -6,3 +6,12 @@
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
   }
+
+  #search
+  {
+    color: darkolivegreen;
+  }
+  mat-form-field
+  {
+    background-color:whitesmoke;
+  }

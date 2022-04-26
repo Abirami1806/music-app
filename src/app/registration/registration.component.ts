@@ -64,6 +64,7 @@ onUploading(e:any,r:any)
   this.nt.image = this.url;
   this.nt.emailId=r.value.emailId;
   this.nt.userName=r.value.name;
+
   console.log("uploading image");
    console.log(r.value.emailId);
    console.log(r.value.name);

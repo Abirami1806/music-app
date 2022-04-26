@@ -6,12 +6,12 @@
       <p>Please fill in this form to create an account.</p>
       <hr>
      <div class="form-group">
-      <label for="name"><b>User Name</b></label><br>
+      <label for="name">User Name</label><br>
       <input type="text" placeholder="Enter Your Name" name="name" id="name" required [(ngModel)]="u2.userName" #userName="ngModel" >
     </div>
     <div class="alert-danger" *ngIf="userName.errors?.['required']">Username required</div>
     <div class="form-group">
-      <label for="email"><b>Email</b></label><br>
+      <label for="email">Email</label><br>
       <input type="text" placeholder="Enter Email" name="emailId" id="emailId" required [(ngModel)]="u2.emailId" #email="ngModel" required pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+?\.[a-z]{2,3}$" >
     </div>
     <div *ngIf="email.errors && email.invalid && email.touched && email.dirty ">
@@ -21,7 +21,7 @@
         <div class="alert-danger" *ngIf="email.errors?.['pattern']">email id should be in the format xyz@gmail.com</div>
     </div>
      <div class="form-group">
-      <label for="psw"><b>Password</b></label><br>
+      <label for="psw">Password</label><br>
       <input type="password" placeholder="Enter Password" name="psw" id="psw" required [(ngModel)]="u2.password" #password="ngModel" minlength="5">
      <div>
     </div><br>
@@ -30,7 +30,7 @@
     <div class="alert-danger" *ngIf="password.errors?.['required']">Password required</div>
 
     <div class="form-group">
-      <label for="psw-repeat"><b>Repeat Password</b></label><br>
+      <label for="psw-repeat">Repeat Password</label><br>
       <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw_repeat" required (ngModel)="u2.password" #passwordConfrm="ngModel" >
     </div>
 
@@ -45,7 +45,7 @@
     </div>
       <hr>
       <div>
-        <label><b>Upload Photo</b></label>
+        <label>Upload Photo</label>
         <input type="file" placeholder="Upload Your Photo" (change)="onUploading($event,registrationForm)" >
         <img [src]=url id="image_upload">
       </div>

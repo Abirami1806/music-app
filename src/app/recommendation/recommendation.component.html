@@ -1,15 +1,15 @@
 
 
 <div class="container">
-    <h1>What DO u Recommend?</h1>
+    <h1>What Do You Recommend?</h1>
     
     <div *ngFor="let n of nts">
       <div *ngIf = "n.title">
         <div>
-            <h2>{{n.title}}</h2>
+            <h2 id="title">{{n.title}}</h2>
             <img src="{{n.text}}" alt={{n.title}}><br>
             <audio src="{{n.tracks}}" controls></audio>
-        </div><br><br>
+        </div><br><br><br>
       </div>
       
     </div>

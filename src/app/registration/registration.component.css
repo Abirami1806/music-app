@@ -6,3 +6,16 @@
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+.container
+{
+    color:blanchedalmond;
+}
+a
+{
+    color: bisque;
+}
+a:hover{
+    color: blanchedalmond;
+    font-style: oblique;
+}
